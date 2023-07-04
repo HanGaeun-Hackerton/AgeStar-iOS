@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		902F8CCE2A53FE4E0066EC48 /* AgeStar_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CCD2A53FE4E0066EC48 /* AgeStar_iOSApp.swift */; };
-		902F8CD02A53FE4E0066EC48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CCF2A53FE4E0066EC48 /* ContentView.swift */; };
 		902F8CD22A53FE4F0066EC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902F8CD12A53FE4F0066EC48 /* Assets.xcassets */; };
 		902F8CD52A53FE4F0066EC48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902F8CD42A53FE4F0066EC48 /* Preview Assets.xcassets */; };
+		902F8CDD2A5400530066EC48 /* SemicolonDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 902F8CDC2A5400530066EC48 /* SemicolonDesign */; };
+		902F8CE02A5425330066EC48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CDF2A5425330066EC48 /* MainView.swift */; };
+		902F8CE22A5425F80066EC48 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CE12A5425F80066EC48 /* Image.swift */; };
+		902F8CE42A54277F0066EC48 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CE32A54277F0066EC48 /* Color.swift */; };
+		902F8CE72A542B720066EC48 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CE62A542B720066EC48 /* RoundedCorner.swift */; };
+		902F8CE92A543ACC0066EC48 /* ShadowUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CE82A543ACC0066EC48 /* ShadowUtil.swift */; };
+		902F8CEB2A5448520066EC48 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CEA2A5448520066EC48 /* SigninView.swift */; };
+		902F8CED2A544BC90066EC48 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CEC2A544BC90066EC48 /* SignupView.swift */; };
+		902F8CF12A5451440066EC48 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CF02A5451440066EC48 /* MyPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		902F8CCA2A53FE4E0066EC48 /* AgeStar-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AgeStar-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		902F8CCD2A53FE4E0066EC48 /* AgeStar_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeStar_iOSApp.swift; sourceTree = "<group>"; };
-		902F8CCF2A53FE4E0066EC48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		902F8CD12A53FE4F0066EC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		902F8CD42A53FE4F0066EC48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		902F8CDF2A5425330066EC48 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		902F8CE12A5425F80066EC48 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		902F8CE32A54277F0066EC48 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		902F8CE62A542B720066EC48 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		902F8CE82A543ACC0066EC48 /* ShadowUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowUtil.swift; sourceTree = "<group>"; };
+		902F8CEA2A5448520066EC48 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		902F8CEC2A544BC90066EC48 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		902F8CF02A5451440066EC48 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				902F8CDD2A5400530066EC48 /* SemicolonDesign in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				902F8CCD2A53FE4E0066EC48 /* AgeStar_iOSApp.swift */,
-				902F8CCF2A53FE4E0066EC48 /* ContentView.swift */,
+				902F8CE52A54295F0066EC48 /* Utility */,
+				902F8CDE2A54251F0066EC48 /* View */,
 				902F8CD12A53FE4F0066EC48 /* Assets.xcassets */,
 				902F8CD32A53FE4F0066EC48 /* Preview Content */,
 			);
@@ -63,8 +80,30 @@
 			isa = PBXGroup;
 			children = (
 				902F8CD42A53FE4F0066EC48 /* Preview Assets.xcassets */,
+				902F8CE12A5425F80066EC48 /* Image.swift */,
+				902F8CE32A54277F0066EC48 /* Color.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		902F8CDE2A54251F0066EC48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				902F8CEA2A5448520066EC48 /* SigninView.swift */,
+				902F8CEC2A544BC90066EC48 /* SignupView.swift */,
+				902F8CDF2A5425330066EC48 /* MainView.swift */,
+				902F8CF02A5451440066EC48 /* MyPageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		902F8CE52A54295F0066EC48 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				902F8CE62A542B720066EC48 /* RoundedCorner.swift */,
+				902F8CE82A543ACC0066EC48 /* ShadowUtil.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,9 @@
 			dependencies = (
 			);
 			name = "AgeStar-iOS";
+			packageProductDependencies = (
+				902F8CDC2A5400530066EC48 /* SemicolonDesign */,
+			);
 			productName = "AgeStar-iOS";
 			productReference = 902F8CCA2A53FE4E0066EC48 /* AgeStar-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +153,9 @@
 				Base,
 			);
 			mainGroup = 902F8CC12A53FE4D0066EC48;
+			packageReferences = (
+				902F8CDB2A5400530066EC48 /* XCRemoteSwiftPackageReference "SemicolonDesign_iOS" */,
+			);
 			productRefGroup = 902F8CCB2A53FE4E0066EC48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				902F8CD02A53FE4E0066EC48 /* ContentView.swift in Sources */,
+				902F8CE72A542B720066EC48 /* RoundedCorner.swift in Sources */,
+				902F8CE22A5425F80066EC48 /* Image.swift in Sources */,
+				902F8CE92A543ACC0066EC48 /* ShadowUtil.swift in Sources */,
+				902F8CE02A5425330066EC48 /* MainView.swift in Sources */,
+				902F8CED2A544BC90066EC48 /* SignupView.swift in Sources */,
+				902F8CF12A5451440066EC48 /* MyPageView.swift in Sources */,
+				902F8CE42A54277F0066EC48 /* Color.swift in Sources */,
+				902F8CEB2A5448520066EC48 /* SigninView.swift in Sources */,
 				902F8CCE2A53FE4E0066EC48 /* AgeStar_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		902F8CDB2A5400530066EC48 /* XCRemoteSwiftPackageReference "SemicolonDesign_iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/semicolonDSM/SemicolonDesign_iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		902F8CDC2A5400530066EC48 /* SemicolonDesign */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902F8CDB2A5400530066EC48 /* XCRemoteSwiftPackageReference "SemicolonDesign_iOS" */;
+			productName = SemicolonDesign;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 902F8CC22A53FE4E0066EC48 /* Project object */;
 }

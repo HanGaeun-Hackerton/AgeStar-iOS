@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "semicolondesign_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/semicolonDSM/SemicolonDesign_iOS.git",
+      "state" : {
+        "revision" : "dd964887e2c8ebc8bc0efa42a2aaef8c65b2b9ac",
+        "version" : "1.13.4"
+      }
+    }
+  ],
+  "version" : 2
+}
