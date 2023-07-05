@@ -13,7 +13,7 @@ struct SignupView: View {
     @Binding var isMovingMainView: Bool
     func dateString() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy/M/d"
+        dateFormatter.dateFormat = "yyyy"
 
         let date = Date() // 현재 날짜와 시간
         return dateFormatter.string(from: date)

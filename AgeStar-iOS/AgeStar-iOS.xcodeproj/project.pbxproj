@@ -19,6 +19,13 @@
 		902F8CEB2A5448520066EC48 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CEA2A5448520066EC48 /* SigninView.swift */; };
 		902F8CED2A544BC90066EC48 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CEC2A544BC90066EC48 /* SignupView.swift */; };
 		902F8CF12A5451440066EC48 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CF02A5451440066EC48 /* MyPageView.swift */; };
+		902F8CF32A54E58E0066EC48 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 902F8CF22A54E58E0066EC48 /* Launch Screen.storyboard */; };
+		902F8CF72A54E96F0066EC48 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CF62A54E96F0066EC48 /* ImagePicker.swift */; };
+		902F8CFB2A54EFA70066EC48 /* InsuranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CFA2A54EFA70066EC48 /* InsuranceView.swift */; };
+		902F8CFD2A54FA880066EC48 /* InsuranceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CFC2A54FA880066EC48 /* InsuranceCell.swift */; };
+		902F8D002A5502E00066EC48 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CFF2A5502E00066EC48 /* ChangePasswordView.swift */; };
+		905988A22A55999700DCC274 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988A12A55999700DCC274 /* NewsView.swift */; };
+		905988A52A55A73200DCC274 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988A42A55A73200DCC274 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,14 @@
 		902F8CEA2A5448520066EC48 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		902F8CEC2A544BC90066EC48 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		902F8CF02A5451440066EC48 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		902F8CF22A54E58E0066EC48 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		902F8CF62A54E96F0066EC48 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		902F8CFA2A54EFA70066EC48 /* InsuranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceView.swift; sourceTree = "<group>"; };
+		902F8CFC2A54FA880066EC48 /* InsuranceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceCell.swift; sourceTree = "<group>"; };
+		902F8CFF2A5502E00066EC48 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		905988A12A55999700DCC274 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		905988A32A55A6F100DCC274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		905988A42A55A73200DCC274 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +82,13 @@
 		902F8CCC2A53FE4E0066EC48 /* AgeStar-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				905988A32A55A6F100DCC274 /* Info.plist */,
 				902F8CCD2A53FE4E0066EC48 /* AgeStar_iOSApp.swift */,
 				902F8CE52A54295F0066EC48 /* Utility */,
 				902F8CDE2A54251F0066EC48 /* View */,
 				902F8CD12A53FE4F0066EC48 /* Assets.xcassets */,
 				902F8CD32A53FE4F0066EC48 /* Preview Content */,
+				902F8CF22A54E58E0066EC48 /* Launch Screen.storyboard */,
 			);
 			path = "AgeStar-iOS";
 			sourceTree = "<group>";
@@ -89,10 +106,9 @@
 		902F8CDE2A54251F0066EC48 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				902F8CEA2A5448520066EC48 /* SigninView.swift */,
-				902F8CEC2A544BC90066EC48 /* SignupView.swift */,
-				902F8CDF2A5425330066EC48 /* MainView.swift */,
-				902F8CF02A5451440066EC48 /* MyPageView.swift */,
+				902F8CF82A54EF8A0066EC48 /* Auth */,
+				902F8CF92A54EF8E0066EC48 /* Main */,
+				902F8CFE2A5502D50066EC48 /* MyPage */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,9 +117,40 @@
 			isa = PBXGroup;
 			children = (
 				902F8CE62A542B720066EC48 /* RoundedCorner.swift */,
+				902F8CF62A54E96F0066EC48 /* ImagePicker.swift */,
 				902F8CE82A543ACC0066EC48 /* ShadowUtil.swift */,
+				905988A42A55A73200DCC274 /* WebView.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		902F8CF82A54EF8A0066EC48 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				902F8CEA2A5448520066EC48 /* SigninView.swift */,
+				902F8CEC2A544BC90066EC48 /* SignupView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		902F8CF92A54EF8E0066EC48 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				902F8CDF2A5425330066EC48 /* MainView.swift */,
+				902F8CFA2A54EFA70066EC48 /* InsuranceView.swift */,
+				902F8CFC2A54FA880066EC48 /* InsuranceCell.swift */,
+				905988A12A55999700DCC274 /* NewsView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		902F8CFE2A5502D50066EC48 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				902F8CF02A5451440066EC48 /* MyPageView.swift */,
+				902F8CFF2A5502E00066EC48 /* ChangePasswordView.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				902F8CF32A54E58E0066EC48 /* Launch Screen.storyboard in Resources */,
 				902F8CD52A53FE4F0066EC48 /* Preview Assets.xcassets in Resources */,
 				902F8CD22A53FE4F0066EC48 /* Assets.xcassets in Resources */,
 			);
@@ -185,12 +233,18 @@
 				902F8CE72A542B720066EC48 /* RoundedCorner.swift in Sources */,
 				902F8CE22A5425F80066EC48 /* Image.swift in Sources */,
 				902F8CE92A543ACC0066EC48 /* ShadowUtil.swift in Sources */,
+				905988A22A55999700DCC274 /* NewsView.swift in Sources */,
 				902F8CE02A5425330066EC48 /* MainView.swift in Sources */,
 				902F8CED2A544BC90066EC48 /* SignupView.swift in Sources */,
+				905988A52A55A73200DCC274 /* WebView.swift in Sources */,
 				902F8CF12A5451440066EC48 /* MyPageView.swift in Sources */,
+				902F8D002A5502E00066EC48 /* ChangePasswordView.swift in Sources */,
 				902F8CE42A54277F0066EC48 /* Color.swift in Sources */,
+				902F8CF72A54E96F0066EC48 /* ImagePicker.swift in Sources */,
 				902F8CEB2A5448520066EC48 /* SigninView.swift in Sources */,
 				902F8CCE2A53FE4E0066EC48 /* AgeStar_iOSApp.swift in Sources */,
+				902F8CFD2A54FA880066EC48 /* InsuranceCell.swift in Sources */,
+				902F8CFB2A54EFA70066EC48 /* InsuranceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,9 +375,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AgeStar-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AgeStar-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -349,9 +405,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AgeStar-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AgeStar-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

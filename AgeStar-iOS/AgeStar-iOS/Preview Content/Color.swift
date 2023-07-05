@@ -9,6 +9,7 @@ public extension Color {
 public extension Color.Main {
     static let main: Color = Color("Main")
     static let bolderColor: Color = Color("BolderColor")
+    static let greenShadow: Color = Color("GreenShadow")
 }
 
 public extension Color.Sub {

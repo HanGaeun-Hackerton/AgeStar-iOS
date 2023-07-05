@@ -12,4 +12,15 @@ extension View {
             y: spreadedY
         )
     }
+    func insuranceShadow() -> some View {
+        let radius = 10 / 2.0
+        let spreadedX: CGFloat = 0
+        let spreadedY: CGFloat = 0
+        return shadow(
+            color: .Main.greenShadow,
+            radius: radius,
+            x: spreadedX,
+            y: spreadedY
+        )
+    }
 }

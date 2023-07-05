@@ -43,12 +43,16 @@ struct MainView: View {
                 ScrollView {
                     VStack(spacing: 20) {
                         HStack(spacing: 15) {
-                            oneBox(.benefit)
+                            NavigationLink(destination: InsuranceView()) {
+                                oneBox(.benefit)
+                            }
                             oneBox(.insurance)
                         }
                         recommendBox()
                         HStack(spacing: 15) {
-                            twoBox(.news)
+                            NavigationLink(destination: NewsView()) {
+                                twoBox(.news)
+                            }
                             twoBox(.qna)
                         }
                         HStack(spacing: 15) {
@@ -167,7 +171,7 @@ struct MainView_Previews: PreviewProvider {
     }
 }
 
-private struct SearchTextField: View {
+public struct SearchTextField: View {
 
     let title: String
     let placeholder: String
