@@ -5,6 +5,8 @@ struct ChangePasswordView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var nowPasswordText = ""
     @State var newPasswordext = ""
+    @State var isWrongPAssword = false
+    @State var isEmpty = false
     var body: some View {
         VStack(alignment: .leading) {
             Spacer()
@@ -27,7 +29,13 @@ struct ChangePasswordView: View {
             Spacer()
 
             Button {
-                self.presentationMode.wrappedValue.dismiss()
+                if newPasswordext.isEmpty || nowPasswordText.isEmpty {
+                    isEmpty.toggle()
+                } else if newPasswordext == nowPasswordText {
+                    self.presentationMode.wrappedValue.dismiss()
+                } else {
+                    isWrongPAssword.toggle()
+                }
             } label: {
                 Text("변경")
                     .sdText(type: .body1, textColor: .white)
@@ -38,6 +46,12 @@ struct ChangePasswordView: View {
             }
         }
         .padding(15)
+        .alert("비밀번호가 일치하지 않습니다.", isPresented: $isWrongPAssword) {
+            Button("확인", role: .cancel) {}
+        }
+        .alert("빈칸이 있습니다.", isPresented: $isEmpty) {
+            Button("확인", role: .cancel) {}
+        }
     }
 }
 

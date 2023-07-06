@@ -25,7 +25,13 @@
 		902F8CFD2A54FA880066EC48 /* InsuranceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CFC2A54FA880066EC48 /* InsuranceCell.swift */; };
 		902F8D002A5502E00066EC48 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902F8CFF2A5502E00066EC48 /* ChangePasswordView.swift */; };
 		905988A22A55999700DCC274 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988A12A55999700DCC274 /* NewsView.swift */; };
-		905988A52A55A73200DCC274 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988A42A55A73200DCC274 /* WebView.swift */; };
+		905988A82A55BCE100DCC274 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 905988A72A55BCE100DCC274 /* Moya */; };
+		905988AB2A55BD1200DCC274 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988AA2A55BD1200DCC274 /* NewsAPI.swift */; };
+		905988AF2A55BE4F00DCC274 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988AE2A55BE4F00DCC274 /* NewsListView.swift */; };
+		905988B12A55C05500DCC274 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988B02A55C05500DCC274 /* NewsModel.swift */; };
+		905988B32A55C30500DCC274 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988B22A55C30500DCC274 /* NewsListViewModel.swift */; };
+		905988B52A55C60A00DCC274 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988B42A55C60A00DCC274 /* WebView.swift */; };
+		905988B72A55CD4100DCC274 /* KakaoSigninVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905988B62A55CD4100DCC274 /* KakaoSigninVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +54,12 @@
 		902F8CFF2A5502E00066EC48 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		905988A12A55999700DCC274 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		905988A32A55A6F100DCC274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		905988A42A55A73200DCC274 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		905988AA2A55BD1200DCC274 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		905988AE2A55BE4F00DCC274 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		905988B02A55C05500DCC274 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		905988B22A55C30500DCC274 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		905988B42A55C60A00DCC274 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		905988B62A55CD4100DCC274 /* KakaoSigninVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSigninVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				905988A82A55BCE100DCC274 /* Moya in Frameworks */,
 				902F8CDD2A5400530066EC48 /* SemicolonDesign in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +96,7 @@
 			children = (
 				905988A32A55A6F100DCC274 /* Info.plist */,
 				902F8CCD2A53FE4E0066EC48 /* AgeStar_iOSApp.swift */,
+				905988A92A55BD0600DCC274 /* API */,
 				902F8CE52A54295F0066EC48 /* Utility */,
 				902F8CDE2A54251F0066EC48 /* View */,
 				902F8CD12A53FE4F0066EC48 /* Assets.xcassets */,
@@ -119,7 +132,7 @@
 				902F8CE62A542B720066EC48 /* RoundedCorner.swift */,
 				902F8CF62A54E96F0066EC48 /* ImagePicker.swift */,
 				902F8CE82A543ACC0066EC48 /* ShadowUtil.swift */,
-				905988A42A55A73200DCC274 /* WebView.swift */,
+				905988B42A55C60A00DCC274 /* WebView.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -128,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				902F8CEA2A5448520066EC48 /* SigninView.swift */,
+				905988B62A55CD4100DCC274 /* KakaoSigninVIew.swift */,
 				902F8CEC2A544BC90066EC48 /* SignupView.swift */,
 			);
 			path = Auth;
@@ -140,6 +154,8 @@
 				902F8CFA2A54EFA70066EC48 /* InsuranceView.swift */,
 				902F8CFC2A54FA880066EC48 /* InsuranceCell.swift */,
 				905988A12A55999700DCC274 /* NewsView.swift */,
+				905988AE2A55BE4F00DCC274 /* NewsListView.swift */,
+				905988B22A55C30500DCC274 /* NewsListViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -151,6 +167,15 @@
 				902F8CFF2A5502E00066EC48 /* ChangePasswordView.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		905988A92A55BD0600DCC274 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				905988AA2A55BD1200DCC274 /* NewsAPI.swift */,
+				905988B02A55C05500DCC274 /* NewsModel.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +196,7 @@
 			name = "AgeStar-iOS";
 			packageProductDependencies = (
 				902F8CDC2A5400530066EC48 /* SemicolonDesign */,
+				905988A72A55BCE100DCC274 /* Moya */,
 			);
 			productName = "AgeStar-iOS";
 			productReference = 902F8CCA2A53FE4E0066EC48 /* AgeStar-iOS.app */;
@@ -202,6 +228,7 @@
 			mainGroup = 902F8CC12A53FE4D0066EC48;
 			packageReferences = (
 				902F8CDB2A5400530066EC48 /* XCRemoteSwiftPackageReference "SemicolonDesign_iOS" */,
+				905988A62A55BCE100DCC274 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 902F8CCB2A53FE4E0066EC48 /* Products */;
 			projectDirPath = "";
@@ -231,20 +258,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				902F8CE72A542B720066EC48 /* RoundedCorner.swift in Sources */,
+				905988AF2A55BE4F00DCC274 /* NewsListView.swift in Sources */,
+				905988B72A55CD4100DCC274 /* KakaoSigninVIew.swift in Sources */,
 				902F8CE22A5425F80066EC48 /* Image.swift in Sources */,
 				902F8CE92A543ACC0066EC48 /* ShadowUtil.swift in Sources */,
 				905988A22A55999700DCC274 /* NewsView.swift in Sources */,
 				902F8CE02A5425330066EC48 /* MainView.swift in Sources */,
 				902F8CED2A544BC90066EC48 /* SignupView.swift in Sources */,
-				905988A52A55A73200DCC274 /* WebView.swift in Sources */,
 				902F8CF12A5451440066EC48 /* MyPageView.swift in Sources */,
 				902F8D002A5502E00066EC48 /* ChangePasswordView.swift in Sources */,
 				902F8CE42A54277F0066EC48 /* Color.swift in Sources */,
 				902F8CF72A54E96F0066EC48 /* ImagePicker.swift in Sources */,
+				905988B32A55C30500DCC274 /* NewsListViewModel.swift in Sources */,
 				902F8CEB2A5448520066EC48 /* SigninView.swift in Sources */,
+				905988B52A55C60A00DCC274 /* WebView.swift in Sources */,
 				902F8CCE2A53FE4E0066EC48 /* AgeStar_iOSApp.swift in Sources */,
+				905988B12A55C05500DCC274 /* NewsModel.swift in Sources */,
 				902F8CFD2A54FA880066EC48 /* InsuranceCell.swift in Sources */,
 				902F8CFB2A54EFA70066EC48 /* InsuranceView.swift in Sources */,
+				905988AB2A55BD1200DCC274 /* NewsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -355,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -373,9 +405,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AgeStar-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 63UM6H56P2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AgeStar-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AgeStar;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -403,9 +437,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AgeStar-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 63UM6H56P2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AgeStar-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AgeStar;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +493,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		905988A62A55BCE100DCC274 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -464,6 +508,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 902F8CDB2A5400530066EC48 /* XCRemoteSwiftPackageReference "SemicolonDesign_iOS" */;
 			productName = SemicolonDesign;
+		};
+		905988A72A55BCE100DCC274 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 905988A62A55BCE100DCC274 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

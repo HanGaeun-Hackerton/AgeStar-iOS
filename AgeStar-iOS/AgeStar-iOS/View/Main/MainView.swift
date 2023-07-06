@@ -5,6 +5,22 @@ struct MainView: View {
     @State var searchText = ""
     @Binding var isAppear: Bool
     
+    let insuranceView = AnyView(WebView(
+        urlToLoad: "https://direct.samsungfire.com/mall/PP030502_001.html"
+    ).navigationBarTitle("보험", displayMode: .inline))
+    let recommandView = AnyView(WebView(
+        urlToLoad: "https://if-blog.tistory.com/1464"
+    ).navigationBarTitle("추천", displayMode: .inline))
+    let qnaView = AnyView(WebView(
+        urlToLoad: "https://www.youth.go.kr/ywith/bbs/data/list.do?menu_idx=8"
+    ).navigationBarTitle("Q&A", displayMode: .inline))
+    let licensView = AnyView(WebView(
+        urlToLoad: "https://www.q-net.or.kr/crf005.do?id=crf00502"
+    ).navigationBarTitle("자격증", displayMode: .inline))
+    let guitarView = AnyView(WebView(
+        urlToLoad: "https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=659&ccfNo=4&cciNo=1&cnpClsNo=1"
+    ).navigationBarTitle("기타", displayMode: .inline))
+    
     init(isAppear: Binding<Bool>) {
         _isAppear = isAppear
     }
@@ -46,18 +62,28 @@ struct MainView: View {
                             NavigationLink(destination: InsuranceView()) {
                                 oneBox(.benefit)
                             }
-                            oneBox(.insurance)
+                            NavigationLink(destination: insuranceView) {
+                                oneBox(.insurance)
+                            }
                         }
-                        recommendBox()
+                        NavigationLink(destination: recommandView) {
+                            recommendBox()
+                        }
                         HStack(spacing: 15) {
                             NavigationLink(destination: NewsView()) {
                                 twoBox(.news)
                             }
-                            twoBox(.qna)
+                            NavigationLink(destination: qnaView) {
+                                twoBox(.qna)
+                            }
                         }
                         HStack(spacing: 15) {
-                            twoBox(.license)
-                            twoBox(.guiter)
+                            NavigationLink(destination: licensView) {
+                                twoBox(.license)
+                            }
+                            NavigationLink(destination: guitarView) {
+                                twoBox(.guiter)
+                            }
                         }
                     }
                     .padding(15)

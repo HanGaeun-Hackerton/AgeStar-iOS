@@ -4,6 +4,7 @@ public extension Color {
     struct Main { }
     struct Sub { }
     struct Box { }
+    struct Logo { }
 }
 
 public extension Color.Main {
@@ -19,4 +20,9 @@ public extension Color.Sub {
 public extension Color.Box {
     static let boxBG: Color = Color("BoxBG")
     static let boxBolder: Color = Color("boxBolder")
+}
+
+public extension Color.Logo {
+    static let kakao: Color = Color("KakaoColor")
+    static let pass: Color = Color("PassColor")
 }
